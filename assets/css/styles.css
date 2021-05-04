@@ -363,7 +363,7 @@ img{
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: var(--second-color);
+  background-color: #512255;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
