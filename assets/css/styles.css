@@ -146,6 +146,7 @@ img{
     padding: 2rem;
     background-color: var(--second-color);
     transition: .5s;
+    z-index: 1;
   }
 }
 .nav__item{
