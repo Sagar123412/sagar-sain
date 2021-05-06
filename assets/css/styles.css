@@ -27,7 +27,7 @@
   }
 }
 
-/*===== Margenes =====*/
+/* Margins*/
 :root{
   --mb-1: 0.5rem;
   --mb-2: 1rem;
@@ -361,7 +361,7 @@ img{
   margin-left: auto;
 }
 
-/* ===== FOOTER =====*/
+/* Footer */
 .footer{
   background-color: #512255;
   color: #fff;
