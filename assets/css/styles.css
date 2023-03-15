@@ -458,42 +458,6 @@ img{
   }
 }
 
-@media (max-width: 875px){
-  .home__data{
-    align-self: flex-end;
-  }
-  .home__img{
-    display: none;
-  }
-  .home__social{
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
-
-@media (min-width: 875px) and (max-width: 1150px) {
-.home__title{
-  font-size: 2.5rem;
-}
-}
-
-@media screen and (min-width: 1024px){
-  .bd-grid{
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .home__img{
-    right: 10%;
-  }
-}
-
-.about-project{
-  margin: 5px;
-}
-
-
-
 /* Experience */
 
 
@@ -538,7 +502,7 @@ img{
     display: flex;
     width: 8px;
     height: 100%;
-    background-color: #f1f1f1;
+    background-color: #4070f4;
     position: absolute;
     top: 0;
     left: 0;
@@ -569,12 +533,34 @@ img{
   width: 40%;
 }
 
-/* Small Screens */
-@media only screen and (max-width: 576px) {
-  .center > ul > li:hover {
-    transform: none;
+@media (max-width: 875px){
+  .home__data{
+    align-self: flex-end;
   }
-  
+  .home__img{
+    display: none;
+  }
+  .home__social{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .center > ul > li {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .copanyImage{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-group {
+    width: 80%;
+    text-align: center;
+    flex-direction: column;
+  }
   .date-group {
     display: flex;
     flex-direction: column;
@@ -583,29 +569,27 @@ img{
   }
 }
 
-/* Medium Screens */
-@media only screen and (max-width: 768px) {
-  .center > li {
-    flex-direction: column;
+@media (min-width: 875px) and (max-width: 1150px) {
+.home__title{
+  font-size: 2.5rem;
+}
+}
+
+@media screen and (min-width: 1024px){
+  .bd-grid{
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  .center > li > div {
-    margin: 1rem 0px;
-  }
-  
-  .text-group {
-    width: 80%;
-    text-align: center;
-  }
-  
-  .date-group{
-    display: flex;
-  }
-  
-  .date-group > h4, p {
-    margin: 0px .5rem;
+  .home__img{
+    right: 10%;
   }
 }
+
+.about-project{
+  margin: 5px;
+}
+
+
 
 
 
