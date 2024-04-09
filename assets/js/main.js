@@ -59,3 +59,24 @@ sr.reveal('.contact__input',{interval: 200});
 
 
 
+// New skills Section 
+
+let currentIndex = 0;
+const logos = document.querySelectorAll('.slider img');
+const totalLogos = logos.length;
+
+function showLogo(index) {
+  logos.forEach((logo, i) => {
+    logo.style.display = i === index ? 'block' : 'none';
+  });
+}
+
+function autoSlide() {
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalLogos; // Loop through logos
+    showLogo(currentIndex);
+  }, 1500); // Change logo every 3 seconds
+}
+
+showLogo(currentIndex); // Show initial logo
+autoSlide();
