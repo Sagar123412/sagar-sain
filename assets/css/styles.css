@@ -827,3 +827,10 @@ sup {
   width: 100px;
   height: 100px;
 }
+
+
+@media screen and (max-width: 600px) {
+  .card_bg{
+    height: fit-content;
+  }
+}
